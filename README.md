@@ -19,4 +19,10 @@ TBD
 
 ## Test
 
+### Setup
+
+```sh
+./setup_shellspec.sh
+```
+
 Planning to use [shellspec](https://github.com/shellspec/shellspec).

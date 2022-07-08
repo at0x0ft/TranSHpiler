@@ -1,0 +1,3 @@
+[submodule "shellspec"]
+	path = shellspec
+	url = https://github.com/shellspec/shellspec.git
