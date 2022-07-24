@@ -33,7 +33,7 @@ TBD
 ### For Development
 
 ```sh
-./setup_shellspec.sh
+./setup_external.sh
 ```
 
 ## Test
