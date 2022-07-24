@@ -13,16 +13,23 @@
     - ...
   - ... and more!
 
-## Requirements.
+## Requirements
 
-TBD
+### For Use
 
-## Test
+1. Git
+
+### For Development
+
+1. All of the above
+2. Docker
 
 ### Setup
 
 ```sh
 ./setup_shellspec.sh
 ```
+
+## Test
 
 Planning to use [shellspec](https://github.com/shellspec/shellspec).
