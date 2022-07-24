@@ -1,6 +1,6 @@
-[submodule "exteral/shellspec"]
-	path = exteral/shellspec
-	url = https://github.com/shellspec/shellspec
 [submodule "external/shellspec"]
 	path = external/shellspec
 	url = https://github.com/shellspec/shellspec
+[submodule "external/readlinkf"]
+	path = external/readlinkf
+	url = https://github.com/ko1nksm/readlinkf

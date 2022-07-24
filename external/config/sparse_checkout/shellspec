@@ -1,0 +1,6 @@
+/dockerfiles/
+/contrib/helpers/
+/contrib/shellspec-docker
+/contrib/test_in_docker.sh
+/contrib/various_test.sh
+
