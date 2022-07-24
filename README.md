@@ -24,7 +24,13 @@
 1. All of the above
 2. Docker
 
-### Setup
+## Setup
+
+### For Use
+
+TBD
+
+### For Development
 
 ```sh
 ./setup_shellspec.sh
