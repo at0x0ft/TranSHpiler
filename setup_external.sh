@@ -77,13 +77,14 @@ setup_external() {
       git submodule add "${submodule_url}" $(get_relative_path "${REPOSITORY_ROOT}" "${submodule_destination_path}")
     fi
 
-    git -C "${submodule_destination_path}" config core.sparsecheckout true
-
     local readonly git_sparse_checkout_config_source_path="${GIT_SPARSE_CHECKOUT_CONFIG_SOURCE_DIRPATH}/${submodule_name}"
+    local readonly git_sparse_checkout_config_destination_path=$(get_git_sparse_checkout_config_destination_path "${submodule_name}")
     if [ -f "${git_sparse_checkout_config_source_path}" ]; then
-      local readonly git_sparse_checkout_config_destination_path=$(get_git_sparse_checkout_config_destination_path "${submodule_name}")
-      cp "${git_sparse_checkout_config_source_path}" "${git_sparse_checkout_config_destination_path}"
-      git -C "${submodule_destination_path}" read-tree -mu HEAD
+      git -C "${submodule_destination_path}" sparse-checkout init
+      git -C "${submodule_destination_path}" sparse-checkout set $(cat "${git_sparse_checkout_config_source_path}")
+      git -C "${submodule_destination_path}" pull
+    else
+      git -C "${submodule_destination_path}" sparse-checkout disable
     fi
   done
 
