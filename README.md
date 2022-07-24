@@ -1,4 +1,4 @@
-# TransSHpiler: Transpiler for universal POSIX-compliant shellscript
+# transh: Transpiler for universal POSIX-compliant shellscript
 
 ## Goal
 
